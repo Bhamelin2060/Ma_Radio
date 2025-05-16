@@ -24,6 +24,7 @@ RTL_r.addEventListener('click', () => {
   
             let trackUrl = RTL;
             audioPlayer.src = trackUrl;
+            document.getElementById("Nom_Radio").innerText="Vous écoutez RTL";
             // On lit le track
             audioPlayer.play();
 
@@ -34,6 +35,7 @@ RMC_r.addEventListener('click', () => {
   
             let trackUrl = RMC;
             audioPlayer.src = trackUrl;
+            document.getElementById("Nom_Radio").innerText="Vous écoutez RMC";
             // On lit le track
             audioPlayer.play();
 
@@ -45,6 +47,7 @@ FINFO_r.addEventListener('click', () => {
   
             let trackUrl = France_Info;
             audioPlayer.src = trackUrl;
+            document.getElementById("Nom_Radio").innerText="Vous écoutez France Info";
             // On lit le track
             audioPlayer.play();
 
@@ -55,6 +58,7 @@ EUROPE1_r.addEventListener('click', () => {
   
             let trackUrl = Europe_1;
             audioPlayer.src = trackUrl;
+            document.getElementById("Nom_Radio").innerText="Vous écoutez Europe 1";
             // On lit le track
             audioPlayer.play();
 
@@ -66,6 +70,7 @@ MRADIO_r.addEventListener('click', () => {
   
             let trackUrl = M_Radio;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez M Radio";
             // On lit le track
             audioPlayer.play();
 
@@ -77,6 +82,7 @@ FINTER_r.addEventListener('click', () => {
   
             let trackUrl = France_Inter;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez France Inter";
             // On lit le track
             audioPlayer.play();
 
@@ -87,6 +93,7 @@ Rclassique_r.addEventListener('click', () => {
   
             let trackUrl = Radio_Classique;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique1";
             // On lit le track
             audioPlayer.play();
 
@@ -97,6 +104,7 @@ FMusique_r.addEventListener('click', () => {
   
             let trackUrl = France_Musique;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez France Musique";
             // On lit le track
             audioPlayer.play();
 
@@ -107,6 +115,7 @@ FIP_r.addEventListener('click', () => {
   
             let trackUrl = FIP;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez FIP";
             // On lit le track
             audioPlayer.play();
 
@@ -117,6 +126,7 @@ FCulture_r.addEventListener('click', () => {
   
             let trackUrl = France_culture;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez France Culture";
             // On lit le track
             audioPlayer.play();
 
@@ -127,6 +137,7 @@ Nostalgie_r.addEventListener('click', () => {
   
             let trackUrl = Nostalgie;
             audioPlayer.src = trackUrl;
+            document.getElementById("Nom_Radio").innerText="Vous écoutez Nostalgie";
             // On lit le track
             audioPlayer.play();
 
@@ -136,6 +147,7 @@ Cherie_r.addEventListener('click', () => {
   
             let trackUrl = Chérie_FM;
             audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez Chérie FM";
             // On lit le track
             audioPlayer.play();
 
