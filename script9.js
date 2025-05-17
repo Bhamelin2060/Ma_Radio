@@ -17,7 +17,8 @@ let audioPlayer=document.getElementById('audioPlayer');
   let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac"
   let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios"
   let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios"
-
+ let OTTO_Baroque=src="http://www.1.fm/tunestream/baroque/listen.pls"
+ let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream"
 const RTL_r=document.getElementById('RTL');
  
 RTL_r.addEventListener('click', () => {
@@ -148,6 +149,26 @@ Cherie_r.addEventListener('click', () => {
             let trackUrl = Chérie_FM;
             audioPlayer.src = trackUrl;
              document.getElementById("Nom_Radio").innerText="Vous écoutez Chérie FM";
+            // On lit le track
+            audioPlayer.play();
+
+});
+const OTTOBAROQUE_r=document.getElementById('OTTO');
+OTTOBAROQUE_r.addEventListener('click', () => {
+  
+            let trackUrl = OTTO_Baroque;
+            audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez OTTO";
+            // On lit le track
+            audioPlayer.play();
+
+});
+const ANCIEN_FM_r=document.getElementById('ANCIEN_FM');
+ANCIEN_FM_r.addEventListener('click', () => {
+  
+            let trackUrl = ANCIEN_FM;
+            audioPlayer.src = trackUrl;
+             document.getElementById("Nom_Radio").innerText="Vous écoutez ANCIEN FM";
             // On lit le track
             audioPlayer.play();
 
