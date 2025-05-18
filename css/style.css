@@ -1153,7 +1153,7 @@ a.info:hover div {
     flex-wrap: wrap;
     font-family: VagRounded;
     padding: 5px 10px 5px 10px;
-    margin: 20px; /*auto;*/
+    margin: auto;
     font-size: 30px;
     height: 100%;
     width: 100%;
