@@ -1082,8 +1082,8 @@ a.info:hover div {
 .Chapitre {
   /*    border:1px rgb(206, 137, 35) solid; */
   flex-direction: column;
-  width: 100px;
-  height: 180px;
+  width: 5em;
+  height: 5em;
   background-color: #d3adad;
   background: url("../images/Acceuil/ciel_noir.webp");
   border-radius: 10px;
