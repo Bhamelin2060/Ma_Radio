@@ -100,6 +100,7 @@ h3.top {
 
 header {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
   /* height:10%;*/
@@ -1057,7 +1058,7 @@ a.info:hover div {
   flex-wrap: wrap;
   font-family: VagRounded;
   padding: 5px 10px 5px 10px;
-  
+  margin: auto;
   font-size: 30px;
    height:800px; 
   justify-content: space-around;
@@ -1085,7 +1086,7 @@ a.info:hover div {
 .Chapitre {
   /*    border:1px rgb(206, 137, 35) solid; */
   flex-direction: column;
-  width: 80px;
+  width: 100px;
   height: 180px;
   margin:1%;
   background-color: #d3adad;
@@ -1114,8 +1115,8 @@ a.info:hover div {
 }
 
 .footer_chapitre {
-  overflow: hidden;
-  width: 800px;
+     width: 800px;
+     height: 100%;
 }
 .footer_chapitre:p {
   font-size: 20px;
@@ -1127,9 +1128,14 @@ a.info:hover div {
   padding-right: 2em; /* un peu d'espace pour la transition */
  /* padding-left: 100%; /* placement à droite du conteneur */
   white-space: nowrap; /* pas de passage à la ligne */
+  height:30px;
   /*animation: defilement-rtl 15s infinite linear;*/
   color: rgb(39, 12, 160);
+   
+  font-size:20px ;
+  padding-bottom: 5%;
 }
+
 
 .footer_chapitre1 {
   overflow: hidden;
@@ -1140,7 +1146,7 @@ a.info:hover div {
   overflow: hidden;
 }
 #audioPlayer{
-  height: 70px;
+  height: 20px;
   align-items: center;
   width: 80%;
 }
@@ -1156,7 +1162,7 @@ a.info:hover div {
 @media all and (max-width: 767px) {
   ._sommaire {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-family: VagRounded;
     padding: 5px 10px 5px 10px;
     margin: auto;
@@ -2709,7 +2715,6 @@ a.info:hover div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size:30px;
   font-family: "Poppins", sans-serif;
 }
 
