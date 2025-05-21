@@ -94,7 +94,7 @@ Rclassique_r.addEventListener('click', () => {
   
             let trackUrl = Radio_Classique;
             audioPlayer.src = trackUrl;
-             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique1";
+             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique";
             // On lit le track
             audioPlayer.play();
 
