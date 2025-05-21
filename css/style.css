@@ -1085,7 +1085,7 @@ a.info:hover div {
 .Chapitre {
   /*    border:1px rgb(206, 137, 35) solid; */
   flex-direction: column;
-  width: 100px;
+  width: 150px;
   height: 180px;
   margin:1%;
   background-color: #d3adad;
