@@ -19,8 +19,9 @@ let audioPlayer=document.getElementById('audioPlayer');
   let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios"
  let OTTO_Baroque=src="http://www.1.fm/tunestream/baroque/listen.pls"
  let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream"
+let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
+
 const RTL_r=document.getElementById('RTL');
- 
 RTL_r.addEventListener('click', () => {
   
             let trackUrl = RTL;
