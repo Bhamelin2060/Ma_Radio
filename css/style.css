@@ -851,19 +851,7 @@ a.info:hover div {
   font-style: normal;
 }
 /* animtionbattement de coeur */
-@keyframes battement {
-  0% {
-    /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
-    transform: scale(1);
-  }
-  50% {
-    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(10%, 0, 0); /* position initiale à droite */
@@ -872,36 +860,7 @@ a.info:hover div {
     transform: translate3d(-100%, 0, 0); /* position finale à gauche */
   }
 }
-@keyframes lampe {
-  from {
-    color: black;
-    scale: 1;
-  }
-  10% {
-    color: rgb(211, 11, 168);
-    scale: 1.5;
-  }
-  20% {
-    color: rgb(34, 16, 197);
-    scale: 2;
-  }
-  30% {
-    color: rgb(211, 11, 168);
-    scale: 2.5;
-  }
-  50% {
-    color: rgb(223, 202, 13);
-    scale: 2;
-  }
-  60% {
-    color: rgb(24, 226, 68);
-    scale: 1.5;
-  }
-  to {
-    color: rgb(92, 83, 83);
-    scale: 1;
-  }
-}
+
 .Banniere_description {
   display: flex;
   justify-content: space-between;
@@ -1169,12 +1128,12 @@ a.info:hover div {
     font-size: 30px;
     height: 100%;
     width: 100%;
-    justify-content: space-around;
-    scale: 80%;
+    justify-content: space-between;
+    scale: 100%;
   }
   .Chapitre {
     height: 160px;
-    margin:5%
+    
   }
 }
 .site-navigation {
