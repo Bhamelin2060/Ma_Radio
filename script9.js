@@ -173,3 +173,14 @@ ANCIEN_FM_r.addEventListener('click', () => {
             audioPlayer.play();
 
 });
+const CROONER_r=document.getElementById('CROONER');
+CROONER_r.addEventListener('click', () => {
+  
+            let trackUrl = CROONER;
+            audioPlayer.src = trackUrl;
+           
+             document.getElementById("Nom_Radio").innerText="Vous écoutez CROONER";
+            // On lit le track
+            audioPlayer.play();
+
+});
