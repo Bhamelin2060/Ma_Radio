@@ -568,6 +568,7 @@ a.info:hover div {
   .Entete {
     flex-wrap:wrap;
     justify-content: space-around;
+     background: url(../images/texture-paper.png); 
   }
   h1 {
     font-size: 15px;
