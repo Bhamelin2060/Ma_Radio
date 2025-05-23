@@ -1132,7 +1132,7 @@ a.info:hover div {
     scale: 100%;
   }
   .Chapitre {
-    height: 160px;
+    height: 120px;
     
   }
 }
@@ -1145,7 +1145,7 @@ a.info:hover div {
 }
 
 .Banniere_Image { /*  Banniere image hotel 1 */
-  height: 100px;
+  height: 70px;
   /* width:100%; 
   border:1px rgb(226, 33, 49) solid; */
   margin-bottom: 0px;
