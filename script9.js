@@ -169,7 +169,7 @@ ANCIEN_FM_r.addEventListener('click', () => {
   
             let trackUrl = ANCIEN_FM;
             audioPlayer.src = trackUrl;
-             document.getElementById("Nom_Radio").innerText="Vous écoutez ANCIEN FM";
+             document.getElementById("Nom_Radio").innerText="Vous écoutez ANCIENT";
             // On lit le track
             audioPlayer.play();
 
