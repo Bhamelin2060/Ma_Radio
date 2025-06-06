@@ -3,10 +3,11 @@
 // =====================================
 // recherche de la date du jour actuel
  
-//let audioPlayer = $('#audioPlayer');
-let audioPlayer=document.getElementById('audioPlayer');
-  let RTL = " http://streaming.radio.rtl.fr/rtl-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg";
-  let RMC ="http://chai5she.cdn.dvmr.fr/rmcinfo"
+//let Son = $('#audioPlayer');
+const Son=document.getElementById('audioPlayer');
+
+  let RTL = "http://streaming.radio.rtl.fr/rtl-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg";
+  let RMC ="http://audio.bfmtv.com/rmcradio_128.mp3"
   let France_Info="http://icecast.radiofrance.fr/franceinfo-hifi.aac"
   let Europe_1 ="http://europe1.lmn.fm/europe1.aac";
   let M_Radio ="http://mfm.ice.infomaniak.ch/mfm-64.aac";
@@ -14,32 +15,38 @@ let audioPlayer=document.getElementById('audioPlayer');
   let Radio_Classique="http://radioclassique.ice.infomaniak.ch/radioclassique-high.aac";
   let France_Musique ="http://icecast.radiofrance.fr/francemusique-hifi.aac"
   let FIP ="http://direct.fipradio.fr/live/fip-hifi.aac";
-  let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac"
-  let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios"
-  let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios"
- let OTTO_Baroque=src="http://www.1.fm/tunestream/baroque/listen.pls"
- let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream"
-let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
-
-const RTL_r=document.getElementById('RTL');
+  let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac";
+  let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios";
+  let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios";
+ let OTTO_Baroque=src="http://www.1.fm/tunestream/baroque/listen.pls";
+ let OTTO_Baroque_type=type="mpeg";
+ let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream";
+ let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
+//---------------------------- declaration boutons volume----------------
+const Vol_plus=document.getElementById("Volume_plus");
+const Vol_moins=document.getElementById("Volume_moins");
+const Vol_son =document.getElementById("Vol_son");
+ const RTL_r=document.getElementById('RTL');
+ 
+ Vol_son.innerText=parseInt(Son.volume*10);
 RTL_r.addEventListener('click', () => {
   
-            let trackUrl = RTL;
-            audioPlayer.src = trackUrl;
+            let Station= RTL;
+            initAudio(Station);;
             document.getElementById("Nom_Radio").innerText="Vous écoutez RTL";
             // On lit le track
-            audioPlayer.play();
+            
 
 });
 const RMC_r=document.getElementById('Radio_RMC');
  
 RMC_r.addEventListener('click', () => {
   
-            let trackUrl = RMC;
-            audioPlayer.src = trackUrl;
+            let Station= RMC;
+            initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez RMC";
             // On lit le track
-            audioPlayer.play();
+             
 
 });
 
@@ -47,22 +54,22 @@ const FINFO_r=document.getElementById('France_Info');
  
 FINFO_r.addEventListener('click', () => {
   
-            let trackUrl = France_Info;
-            audioPlayer.src = trackUrl;
+            let Station= France_Info;
+            initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez France Info";
             // On lit le track
-            audioPlayer.play();
+             
 
 });
 const EUROPE1_r=document.getElementById('Europe_1');
  
 EUROPE1_r.addEventListener('click', () => {
   
-            let trackUrl = Europe_1;
-            audioPlayer.src = trackUrl;
+            let Station= Europe_1;
+	    initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez Europe 1";
             // On lit le track
-            audioPlayer.play();
+             
 
 });
 
@@ -70,11 +77,11 @@ const MRADIO_r=document.getElementById('M_RADIO');
  
 MRADIO_r.addEventListener('click', () => {
   
-            let trackUrl = M_Radio;
-            audioPlayer.src = trackUrl;
+            let Station= M_Radio;
+            initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez M Radio";
             // On lit le track
-            audioPlayer.play();
+            Son.play();
 
 });
  
@@ -82,106 +89,146 @@ const FINTER_r=document.getElementById('France_Inter');
  
 FINTER_r.addEventListener('click', () => {
   
-            let trackUrl = France_Inter;
-            audioPlayer.src = trackUrl;
+            let Station= France_Inter;
+             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Inter";
-            // On lit le track
-            audioPlayer.play();
+             
 
 });
 const Rclassique_r=document.getElementById('Radio_Classique');
  
 Rclassique_r.addEventListener('click', () => {
   
-            let trackUrl = Radio_Classique;
-            audioPlayer.src = trackUrl;
-             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique";
-            // On lit le track
-            audioPlayer.play();
-
+            let Station= Radio_Classique;
+            initAudio(Station);
+             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique1";
+             
 });
 const FMusique_r=document.getElementById('France_Musique');
  
 FMusique_r.addEventListener('click', () => {
   
-            let trackUrl = France_Musique;
-            audioPlayer.src = trackUrl;
+            let Station= France_Musique;
+            initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Musique";
-            // On lit le track
-            audioPlayer.play();
+            
 
 });
 const FIP_r=document.getElementById('FIP');
  
 FIP_r.addEventListener('click', () => {
   
-            let trackUrl = FIP;
-            audioPlayer.src = trackUrl;
+            let Station= FIP;
+            initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez FIP";
-            // On lit le track
-            audioPlayer.play();
+             
 
 });
 const FCulture_r=document.getElementById('France_culture');
  
 FCulture_r.addEventListener('click', () => {
   
-            let trackUrl = France_culture;
-            audioPlayer.src = trackUrl;
+            let Station= France_culture;
+          initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Culture";
-            // On lit le track
-            audioPlayer.play();
-
+             
 });
 const Nostalgie_r=document.getElementById('Nostalgie');
  
 Nostalgie_r.addEventListener('click', () => {
   
-            let trackUrl = Nostalgie;
-            audioPlayer.src = trackUrl;
+            let Station = Nostalgie;
+            initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez Nostalgie";
-            // On lit le track
-            audioPlayer.play();
-
+             
 });
 const Cherie_r=document.getElementById('Chérie_FM');
 Cherie_r.addEventListener('click', () => {
   
-            let trackUrl = Chérie_FM;
-            audioPlayer.src = trackUrl;
+            let Station= Chérie_FM;
+           initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez Chérie FM";
-            // On lit le track
-            audioPlayer.play();
-
+             
 });
 const OTTOBAROQUE_r=document.getElementById('OTTO');
 OTTOBAROQUE_r.addEventListener('click', () => {
   
-            let trackUrl = OTTO_Baroque;
-            audioPlayer.src = trackUrl;
+            let Station= OTTO_Baroque;
+            initAudio(Station);
+             
              document.getElementById("Nom_Radio").innerText="Vous écoutez OTTO";
-            // On lit le track
-            audioPlayer.play();
+             
 
 });
 const ANCIEN_FM_r=document.getElementById('ANCIEN_FM');
 ANCIEN_FM_r.addEventListener('click', () => {
   
-            let trackUrl = ANCIEN_FM;
-            audioPlayer.src = trackUrl;
+            let Station= ANCIEN_FM;
+            initAudio(Station);
+           
              document.getElementById("Nom_Radio").innerText="Vous écoutez ANCIENT";
-            // On lit le track
-            audioPlayer.play();
+            
 
 });
 const CROONER_r=document.getElementById('CROONER');
 CROONER_r.addEventListener('click', () => {
   
-            let trackUrl = CROONER;
-            audioPlayer.src = trackUrl;
+            let Station= CROONER;
+           initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez CROONER";
-            // On lit le track
-            audioPlayer.play();
-
+             
 });
+// Gestion du volume
+Vol_plus.addEventListener('click', () => {
+  if(Son.volume+0.1<1){
+  Son.volume =Son.volume + 0.1;
+  Vol_son.innerText=parseInt(Son.volume*10);
+  //console.log("volume son",Son.volume)
+}
+})
+Vol_moins.addEventListener('click', () => {
+   if(Son.volume-0.1>0.1){
+  Son.volume =Son.volume - 0.1;
+ Vol_son.innerText=parseInt(Son.volume*10);
+  //console.log("volume son",Son.volume)
+   }
+})
+function initAudio (Station) {
+   Son.src = Station;
+     var playPromise = Son.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+      Son.load()
+      Son.play(); 
+      
+    })
+    .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+      //Son.pause();
+    });
+  }
+}
+function play(MonPlayer, control) {
+
+    if (Son.paused) {
+        Son.play();
+        control.textContent = '||';
+
+    } else {
+        Son.pause();
+        control.textContent = '>';
+    }
+
+}
+
+
+function resume(MonPlayer) {
+    Son.currentTime = 0;
+
+    Son.pause();
+}
