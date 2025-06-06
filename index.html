@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="seo, google, site web, site internet, Journal de MArtine, Analyse de la carrière d'une aide-soignante">
-    <meta name="description" content="Création du blog de MARTINE.">
+    <meta name="description" content="Ma radio.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
  
 	<link rel="stylesheet" href="./css/style.css"/>
@@ -13,7 +13,7 @@
      
 	<script src="https://kit.fontawesome.com/792ccd00ce.js" crossorigin="anonymous"></script>
 
-	<title>sommaire! </title>       <!-- CORRECTION DU TITRE-->
+	<title>Ma Radio v2! </title>       <!-- CORRECTION DU TITRE-->
 
 
     
@@ -25,7 +25,7 @@
         <nav class="Entete">
             <div class="droite"> 
              
-             <img src="images/Poste radio_T.gif" class="center-block image-resize-mode" width="90" height="90" alt=Logo_Martine, agence web paris, création logo Martine />
+             <img src="images/Poste radio_T.gif" class="center-block image-resize-mode" width="80" height="80" alt=Logo_Martine, agence web paris, création logo Martine />
              <div class="center">
                 <h1>Mes radios </h1>
                 <a href="https://fluxradios.blogspot.com/2014/07/flux-url-rtl.html">
@@ -33,11 +33,11 @@
                 </a>
         
         </div>
- 
-	 <a href="https://www.google.fr">
+ 	<a href="https://www.google.fr/">
         <button class="Bouton1" onclick="self.close();"> OFF</button>
-        </div>
        </a>
+        </div>
+       
         </nav>
     </header>    
     
@@ -46,7 +46,7 @@
 <main class="zen">
 <div class="_sommaire">
      
-        <div class="Chapitre " id="RTL">      <!--premier Chapitre 1¨réaùbule-->
+        <div class="Chapitre" id="RTL">      <!--premier Chapitre 1¨réaùbule-->
             <a class="nounderline" >  
                 <img class="Banniere_Image" src="./images/RTL.png"  alt="Auberge de la Cannebière">
                 <h3>RTL</h3> 
@@ -128,7 +128,7 @@
     </div> 
     <div class="Chapitre" id="ANCIEN_FM">      <!--view-source:https://ca.radio.net/s/1fmbaroque-->
             <a class="nounderline">  
-                <img class=" Banniere_Image" src="./images/ancientfm.png"  alt="ANCIENT">
+                <img class=" Banniere_Image" src="./images/ancientfm.png"  alt="ANCIEN FM">
                 <h3>ANCIENT</h3> 
             </a>                                                              <!--Fin lien image--> 
     </div> 
@@ -146,13 +146,21 @@
     <figure>
   <figcaption id="Nom_Radio">Radio en ecoute :</figcaption>
   </figure>
+ <section class="Bouton_Gestion_Son">
+	<button class="Volume" id="Volume_moins">-</i></button>
+    <p id="Vol_son">.</p>
+	<button class="Volume" id="Volume_plus">+</button>
+    <button class="control_Play_stop" onclick="play('MonPlayer', this)">></button>
+  <!-- <button class="control_Stop" onclick="resume('MonPlayer')">Pause</button>-->
+  
   <audio id="audioPlayer" preload="auto" tabindex="0" controls src=""></audio>
    
-   
+   </section>
 
 </div>
-   <div class="droite"></div>
+   
  </footer>   
 </div>
 </div>
 <script src="script9.js"></script>
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
