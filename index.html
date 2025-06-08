@@ -147,20 +147,23 @@
   <figcaption id="Nom_Radio">Radio en ecoute :</figcaption>
   </figure>
  <section class="Bouton_Gestion_Son">
-	<button class="Volume" id="Volume_moins">-</i></button>
+ 
     <p id="Vol_son">.</p>
-	<button class="Volume" id="Volume_plus">+</button>
-    <button class="control_Play_stop" onclick="play('MonPlayer', this)">></button>
-  <!-- <button class="control_Stop" onclick="resume('MonPlayer')">Pause</button>-->
+ <input  id="slider" type="range"  min="0" max="10" step="1" value="50" ></input> 
+ 	 
+   <button id="Pause" class="control_Play_stop" onclick="play('MonPlayer', this)"></button>
+    
   
   <audio id="audioPlayer" preload="auto" tabindex="0" controls src=""></audio>
    
    </section>
-
+ <!--<div id="Mouse"></div>-->
+ 
 </div>
    
  </footer>   
 </div>
 </div>
-<script src="script9.js"></script>
+<script src="script10.js"></script>
 <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+<!--gestion souris par surseur: https://lndev.me/articles/creer-un-curseur-personnalise-->
