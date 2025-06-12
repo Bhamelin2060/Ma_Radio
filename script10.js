@@ -7,8 +7,8 @@
 const Son=document.getElementById('audioPlayer');
 
   let RTL = "http://streaming.radio.rtl.fr/rtl-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg";
-  let RMC ="http://audio.bfmtv.com/rmcradio_128.mp3"
-  let France_Info="http://icecast.radiofrance.fr/franceinfo-hifi.aac"
+  let RMC =" http://audio.bfmtv.com/rmcradio_128.mp3";
+  let France_Info="http://icecast.radiofrance.fr/franceinfo-hifi.aac";
   let Europe_1 ="http://europe1.lmn.fm/europe1.aac";
   let M_Radio ="http://mfm.ice.infomaniak.ch/mfm-64.aac";
   let France_Inter="http://direct.franceinter.fr/live/franceinter-hifi.aac";
@@ -18,31 +18,33 @@ const Son=document.getElementById('audioPlayer');
   let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac";
   let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios";
   let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios";
- let OTTO_Baroque=src="http://www.1.fm/tunestream/baroque/listen.pls";
- let OTTO_Baroque_type=type="mpeg";
+ let OTTO_Baroque=src="/track/144420537905716801/";
+ 
  let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream";
  let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
 //---------------------------- declaration boutons volume----------------
  
 const Vol_son =document.getElementById("Vol_son");
- const RTL_r=document.getElementById('RTL');
+
 const range = document.getElementById('slider');
-const Btn_Pause=document.getElementById('Pause')
+const Btn_Pause=document.getElementById('Pause');
+const Lecture_bt=document.getElementById('lecture');
+const Icon_HP=document.getElementById('hautparleur');
 Vol_son.innerText=parseInt(Son.volume*10);
+
+const RTL_r=document.getElementById('RTL');
 RTL_r.addEventListener('click', () => {
   
             let Station= RTL;
             initAudio(Station);;
             document.getElementById("Nom_Radio").innerText="Vous écoutez RTL";
             // On lit le track
-            
-
 });
-const RMC_r=document.getElementById('Radio_RMC');
- 
+
+const RMC_r=document.getElementById('RMC');
 RMC_r.addEventListener('click', () => {
   
-            let Station= RMC;
+            let Station=RMC;
             initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez RMC";
             // On lit le track
@@ -186,6 +188,12 @@ CROONER_r.addEventListener('click', () => {
         Son.volume=(range.value*.1)
         console.log("range.value=",range.value,"Son.volume",Son.volume)
         Vol_son.innerText=parseInt(10*Son.volume);
+        if (Son.volume==0){
+        Icon_HP.className='fa-solid fa-volume-off';
+        }
+        if (Son.volume>0){
+        Icon_HP.className='fa-solid fa-volume-high';
+        }
         //Son.volume=5;
     });
  
@@ -213,11 +221,14 @@ function play(MonPlayer, control) {
 
     if (Son.paused) {
         Son.play();
-        control.textContent = '||';
+      //  control.textContent = '||';
+       
+         Lecture_bt.className='fa-solid fa-pause'
        control.style.backgroundColor = "rgb(60,179,113)";
     } else {
         Son.pause();
-        control.textContent = '>';
+        // control.textContent = '>';
+         Lecture_bt.className='fa-solid fa-play'
         control.style.backgroundColor = "rgb(255,19,113)";
     }
 
