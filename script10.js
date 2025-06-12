@@ -27,6 +27,9 @@ const Son=document.getElementById('audioPlayer');
 const Vol_son =document.getElementById("Vol_son");
 
 const range = document.getElementById('slider');
+range.value=3;
+Son.volume=0.3;
+Vol_son.innerText=4;
 const Btn_Pause=document.getElementById('Pause');
 const Lecture_bt=document.getElementById('lecture');
 const Icon_HP=document.getElementById('hautparleur');
