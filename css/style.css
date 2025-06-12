@@ -44,15 +44,6 @@ main {
   /*background-image: url(../images/texture-paper.png);*/
 }
 
-.Titre_martine_gros {
-  font-size: 70px;
-  margin: 10px;
-}
-
-.Titre_martine_petit {
-  font-size: 40px;
-}
-
 .Couverture_int_image {
   display: flex;
   justify-content: center;
@@ -94,7 +85,7 @@ h3.top {
 header {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  
   width: 100%;
   /* height:10%;*/
   align-items: center;
@@ -151,46 +142,6 @@ footer {
   box-shadow: 20px 10px 20px rgba(191, 192, 191, 0.8823529412);
   background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
-}
-
-.info {
-  display: block;
-  text-align: justify;
-}
-
-a.info {
-  position: relative;
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px gray dotted; /* On souligne le texte. */
-}
-
-h2 a.info {
-  color: deeppink;
-}
-
-a.info div {
-  display: none; /* On masque l'infobulle. */
-}
-
-a.info:hover {
-  background: none; /* Correction d'un bug d'Internet Explorer. */
-  z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
-  /* cursor: help;  On change le curseur par défaut par un curseur d'aide. */
-}
-
-a.info:hover div {
-  display: inline; /* On affiche l'infobulle. */
-  position: absolute;
-  white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
-  top: 30px; /* On positionne notre infobulle. */
-  left: 20px;
-  background: white;
-  color: green;
-  padding: 3px;
-  font-size: 20px;
-  border: 1px solid green;
-  border-left: 4px solid green;
 }
 
 .text_invisible {
@@ -253,7 +204,14 @@ margin-left:5%;
   }
 
 #Nom_Radio{
+ padding-top: 15px;
   color: #0839a5;
+  
+}
+figure{
+   
+  height:50%;
+  
 }
 /* ------------gestion curseur -----------*/
 input {
@@ -321,6 +279,22 @@ input[type="range"]::-moz-range-thumb {
   appearance: none;
   transition: .3s;
 }
+
+
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+#Pause{
+  height:25px;
+  width:25px;
+  padding-bottom:0px;
+   
+}
 @supports not (color: color-mix(in srgb,red,red)) {
   input {
     --_c: var(--c);
@@ -332,14 +306,14 @@ input[type="range"]::-moz-range-thumb {
     margin: auto;
   }
   .banniere_image {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     margin-top: 20px;
     object-fit: cover;
   }
 }
 .nounderline{
-  height:10%;
+  height:5px;
 }
 @media all and (min-width: 590px) and (max-width: 767px) {
   .banniere_image {
@@ -595,7 +569,7 @@ input[type="range"]::-moz-range-thumb {
   /*    border:1px rgb(206, 137, 35) solid; */
   flex-direction: column;
   width: 90px;
-  height: 180px;
+  height: 120px;
   margin:auto;
   background-color: #d3adad;
   background: url("../images/Acceuil/ciel_noir.webp");
@@ -662,7 +636,7 @@ input[type="range"]::-moz-range-thumb {
    
   }
   .Chapitre {
-    height: 160px;
+    height: 120px;
     
   }
 }
@@ -1454,83 +1428,7 @@ p.lire.larg50 {
     animation-timing-function: linear;
   }
 }
-@keyframes rotation {
-  from {
-    transform: rotate(10deg) translate(-21px);
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: rotate(30deg) translate(-69px);
-    animation-timing-function: linear;
-  }
-  20% {
-    transform: rotate(45deg) translate(-120px);
-    animation-timing-function: linear;
-  }
-  30% {
-    transform: rotate(30deg) translate(-69px);
-    animation-timing-function: linear;
-  }
-  40% {
-    transform: rotate(10deg) translate(-21px);
-    animation-timing-function: linear;
-  }
-  50% {
-    transform: rotate(0deg) translate(0px);
-    animation-timing-function: linear;
-  }
-  60% {
-    transform: rotate(-10deg) translate(21px);
-    animation-timing-function: linear;
-  }
-  70% {
-    transform: rotate(-30deg) translate(69px);
-    animation-timing-function: linear;
-  }
-  80% {
-    transform: rotate(-45deg) translate(120px);
-    animation-timing-function: linear;
-  }
-  90% {
-    transform: rotate(-30deg) translate(69px);
-    animation-timing-function: linear;
-  }
-  to {
-    transform: rotate(-10deg) translate(21px);
-    animation-timing-function: linear;
-  }
-}
-@keyframes coeur_bat {
-  from {
-    scale: 0.9;
-  }
-  10% {
-    scale: 0.7;
-  }
-  10% {
-    scale: 0.5;
-  }
-  20% {
-    scale: 0.3;
-  }
-  50% {
-    scale: 0.5;
-  }
-  70% {
-    scale: 0.7;
-  }
-  90% {
-    scale: 0.9;
-  }
-  to {
-    scale: 1;
-  }
-}
-/* , ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
+
 .box {
   position: relative;
   color: #f1f1f1;
@@ -1555,352 +1453,6 @@ p.lire.larg50 {
   border-radius: 50%;
 }
 
-.circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  /* background: blue; */
-  border: 3px solid #f1f1f1;
-  box-shadow: 0 -10px 0 #feac5e, -10px 0 0 #c779d0, 0 10px 0 #4bc0c8, 10px 0 0 #42db75;
-  padding-top: 34px;
-}
-.circle:hover {
-  animation: 1s linear infinite alternate boxMagic, 2s linear infinite spinning;
-}
-
-@keyframes boxMagic {
-  from {
-    box-shadow: 0 0 0 #feac5e, 0 0 0 #c779d0, 0 0 0 #4bc0c8, 0 0 0 #42db75;
-  }
-  to {
-    box-shadow: 0 -10px 0 #feac5e, -10px 0 0 #c779d0, 0 10px 0 #4bc0c8, 10px 0 0 #42db75;
-  }
-}
-@keyframes spinning {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@media screen and (max-width: 700px) {
-  .circle {
-    width: 150px;
-    height: 150px;
-    /*  padding-top: 210px;*/
-  }
-  @keyframes boxMagic {
-    from {
-      box-shadow: 0 0 0 #feac5e, 0 0 0 #c779d0, 0 0 0 #4bc0c8, 0 0 0 #42db75;
-    }
-    to {
-      box-shadow: 0 -6px 0 #feac5e, -6px 0 0 #c779d0, 0 6px 0 #4bc0c8, 6px 0 0 #42db75;
-    }
-  }
-}
-#conteneur {
-  width: 18rem;
-  margin: auto;
-}
-
-#pendule {
-  display: flex;
-  padding-top: 50px;
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  transform-origin: 50% 0px;
-}
-#pendule:hover {
-  animation: 5s infinite pendule;
-}
-
-#fil {
-  position: relative;
-  left: 35px;
-  width: 2px;
-  height: 100px;
-  background: black;
-}
-
-#boule {
-  position: relative;
-  left: -13px;
-  top: 4px;
-  width: 180px;
-  height: 270px;
-  /*background-image : radial-gradient(white, grey);*/
-  background-image: url(../images/Hopital/martine_fait_le_ménage.png);
-  background-position: center; /* Center the image */
-  /* background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  border: 1px;
-  border-radius: 50%;
-  border: solid 5px pink;
-  /* ajout pour le cas de l'image*/
-}
-
-/*    Reste maintenant à créer l’animation : ajoutez dans le code CSS du pendule les définitions pour l’animation, puis définissez celle-ci :*/
-@keyframes pendule {
-  from {
-    transform: rotate(15deg);
-  }
-  5% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-14deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-11deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(-8deg);
-  }
-  60% {
-    transform: rotate(7deg);
-  }
-  70% {
-    transform: rotate(-6deg);
-  }
-  80% {
-    transform: rotate(4deg);
-  }
-  90% {
-    transform: rotate(-3deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-#conteneur {
-  width: 18rem;
-  margin: auto;
-}
-
-#pendule_diplome {
-  display: flex;
-  padding-top: 50px;
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  transform-origin: 50% 0px;
-}
-#pendule_diplome:hover {
-  animation: 5s infinite pendule;
-}
-
-#fil_diplome_G {
-  position: relative;
-  left: 12px;
-  top: 2px;
-  rotate: 60deg;
-  width: 2px;
-  height: 55px;
-  background: black;
-}
-
-#fil_diplome_D {
-  position: relative;
-  left: 56px;
-  top: 2px;
-  rotate: -60deg;
-  width: 2px;
-  height: 55px;
-  background: black;
-}
-
-#boule_diplome {
-  position: relative;
-  left: -13px;
-  top: 40px;
-  width: 180px;
-  height: 90px;
-  /*background-image : radial-gradient(white, grey);*/
-  background-image: url(../images/Hopital/diplome.png);
-  background-position: center; /* Center the image */
-  /* background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  border: 1px;
-  border: solid 2px rgb(199, 13, 84);
-  /* ajout pour le cas de l'image*/
-}
-
-/*    Reste maintenant à créer l’animation : ajoutez dans le code CSS du pendule les définitions pour l’animation, puis définissez celle-ci :*/
-@keyframes pendule_diplome {
-  from {
-    transform: rotate(15deg);
-  }
-  5% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-14deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-11deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(-8deg);
-  }
-  60% {
-    transform: rotate(7deg);
-  }
-  70% {
-    transform: rotate(-6deg);
-  }
-  80% {
-    transform: rotate(4deg);
-  }
-  90% {
-    transform: rotate(-3deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-/*durée de l'animation spinner ouverture page acceuil */
-/* Délai du retart de l'animation spinner */
-/* durée du spinner */
-.loading_script_bilan {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  top: 150%;
-  height: 100%;
-  /*background-color: rgba(255, 255, 255, 1.0);
-  border-radius: 5%; */
-  justify-content: center;
-  align-items: center;
-  /*  animation:apparence $Temps_animation_acceuil; */
-  animation-name: balayage;
-  animation-duration: 150s;
-  /* ajout lancement animation bilan retraite */
-}
-
-@keyframes balayage {
-  0% {
-    opacity: 1;
-    top: 100%;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 0;
-    top: -200%;
-  }
-}
-.loading_script_bilan_retraite {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  top: -95%;
-  height: 100%;
-  opacity: 0;
-  /*background-color: rgba(255, 255, 255, 1.0);
-  border-radius: 5%; */
-  justify-content: center;
-  align-items: center;
-  /*  animation:apparence $Temps_animation_acceuil; */
-  animation-delay: 150s;
-  animation-name: balayage_bilan_retraite;
-  animation-duration: 200s;
-}
-
-@keyframes balayage_bilan_retraite {
-  0% {
-    opacity: 0.1;
-  }
-  10% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.loading_script_bilan {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  top: 150%;
-  height: 100%;
-  /*background-color: rgba(255, 255, 255, 1.0);
-  border-radius: 5%; */
-  justify-content: center;
-  align-items: center;
-  /*  animation:apparence $Temps_animation_acceuil; */
-  animation-name: balayage;
-  animation-duration: 150s;
-}
-
-@keyframes balayage {
-  0% {
-    opacity: 1;
-    top: 100%;
-  }
-  10% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0;
-    top: -300%;
-  }
-}
-@keyframes plume {
-  0% {
-    /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
-    transform: scale(1);
-  }
-  50% {
-    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-/* Import Google Font - Poppins */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-#Synthese_Vocale {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-}
-
-#reglage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
 #curseur {
   display: flex;
