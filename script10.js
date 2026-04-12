@@ -19,7 +19,7 @@ const Son=document.getElementById('audioPlayer');
   let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios";
   let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios";
  let OTTO_Baroque="https://strmreg.1.fm/baroque_mobile_mp3";
- 
+ //<a href="/ch/1-fm-otto-s-baroque-music-radio_38391/" id="title" class="title" title="1.FM - Otto's Baroque Music Radio">1.FM - Otto's Baroque Music Radio</a>
  let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream";
  let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
 //---------------------------- declaration boutons volume----------------
@@ -38,7 +38,7 @@ Vol_son.innerText=parseInt(Son.volume*10);
 const RTL_r=document.getElementById('RTL');
 RTL_r.addEventListener('click', () => {
   
-            let Station= RTL;
+            let Station=RTL;
             initAudio(Station);;
             document.getElementById("Nom_Radio").innerText="Vous écoutez RTL";
             // On lit le track
@@ -59,7 +59,7 @@ const FINFO_r=document.getElementById('France_Info');
  
 FINFO_r.addEventListener('click', () => {
   
-            let Station= France_Info;
+            let Station=France_Info;
             initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez France Info";
             // On lit le track
@@ -70,7 +70,7 @@ const EUROPE1_r=document.getElementById('Europe_1');
  
 EUROPE1_r.addEventListener('click', () => {
   
-            let Station= Europe_1;
+            let Station=Europe_1;
 	    initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez Europe 1";
             // On lit le track
@@ -82,7 +82,7 @@ const MRADIO_r=document.getElementById('M_RADIO');
  
 MRADIO_r.addEventListener('click', () => {
   
-            let Station= M_Radio;
+            let Station=M_Radio;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez M Radio";
             // On lit le track
@@ -94,7 +94,7 @@ const FINTER_r=document.getElementById('France_Inter');
  
 FINTER_r.addEventListener('click', () => {
   
-            let Station= France_Inter;
+            let Station=France_Inter;
              initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Inter";
              
@@ -104,7 +104,7 @@ const Rclassique_r=document.getElementById('Radio_Classique');
  
 Rclassique_r.addEventListener('click', () => {
   
-            let Station= Radio_Classique;
+            let Station=Radio_Classique;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique1";
              
@@ -113,7 +113,7 @@ const FMusique_r=document.getElementById('France_Musique');
  
 FMusique_r.addEventListener('click', () => {
   
-            let Station= France_Musique;
+            let Station=France_Musique;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Musique";
             
@@ -123,7 +123,7 @@ const FIP_r=document.getElementById('FIP');
  
 FIP_r.addEventListener('click', () => {
   
-            let Station= FIP;
+            let Station=FIP;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez FIP";
              
@@ -133,7 +133,7 @@ const FCulture_r=document.getElementById('France_culture');
  
 FCulture_r.addEventListener('click', () => {
   
-            let Station= France_culture;
+            let Station=France_culture;
           initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez France Culture";
              
@@ -142,7 +142,7 @@ const Nostalgie_r=document.getElementById('Nostalgie');
  
 Nostalgie_r.addEventListener('click', () => {
   
-            let Station = Nostalgie;
+            let Station =Nostalgie;
             initAudio(Station);
             document.getElementById("Nom_Radio").innerText="Vous écoutez Nostalgie";
              
@@ -150,7 +150,7 @@ Nostalgie_r.addEventListener('click', () => {
 const Cherie_r=document.getElementById('Chérie_FM');
 Cherie_r.addEventListener('click', () => {
   
-            let Station= Chérie_FM;
+            let Station=Chérie_FM;
            initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez Chérie FM";
              
@@ -158,7 +158,7 @@ Cherie_r.addEventListener('click', () => {
 const OTTOBAROQUE_r=document.getElementById('OTTO');
 OTTOBAROQUE_r.addEventListener('click', () => {
   
-            let Station= OTTO_Baroque;
+            let Station=OTTO_Baroque;
             initAudio(Station);
              
              document.getElementById("Nom_Radio").innerText="Vous écoutez OTTO";
@@ -243,4 +243,6 @@ function resume(MonPlayer) {
 
     Son.pause();
 }
- 
+// api cast 
+
+
