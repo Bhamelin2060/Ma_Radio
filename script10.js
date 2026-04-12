@@ -18,7 +18,7 @@ const Son=document.getElementById('audioPlayer');
   let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac";
   let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios";
   let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios";
- let OTTO_Baroque=src="/track/144420537905716801/";
+ let OTTO_Baroque="https://strmreg.1.fm/baroque_mobile_mp3";
  
  let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream";
  let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
