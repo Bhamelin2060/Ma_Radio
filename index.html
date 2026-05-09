@@ -93,7 +93,7 @@
         <div class="Chapitre" id="France_Musique">      <!--Remerciements-->
             <a class="nounderline" >  
                 <img class=" Banniere_Image" src="./images/France musique.jpg"  alt="Aide soignante">
-                <!--<h3>France Musique</h3> ->
+                <!--<h3>France Musique</h3> -->
             </a>                                                              <!--Fin lien image--> 
         </div>     
         <div class="Chapitre" id="FIP">      <!--Remerciements-->
@@ -144,9 +144,9 @@
  <footer>
   
    <div  class="footer_chapitre">
-    <figure>
+  <!--  <figure> -->
   <figcaption id="Nom_Radio">Radio en ecoute :</figcaption>
-  </figure>
+  <!-- </figure>-->
  <section class="Bouton_Gestion_Son">
   <i id="hautparleur" class="fa-solid fa-volume-high"></i>  
   <!--<i id="hautparleur" class="fa-brands fa-chromecast"></i>
@@ -164,8 +164,8 @@
    </button>
    
   <audio id="audioPlayer" preload="auto" tabindex="0" controls src=""></audio>
-   
-   </section>
+   <button id="Btn_Cast" ><i class="fa-brands fa-chromecast"></i></google-cast-launcher>
+   </button>
  <!--<div id="Mouse"></div>-->
  
 </div>
@@ -174,5 +174,7 @@
 </div>
 </div>
 <script src="script10.js"></script>
+<script src="cast.js"></script>
 <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+ 
 <!--gestion souris par surseur: https://lndev.me/articles/creer-un-curseur-personnalise-->
