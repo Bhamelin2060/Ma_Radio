@@ -192,6 +192,8 @@ box-shadow: 10px 10px 15px rgb(95, 75, 173);
 align-items: center;
 max-width: 90%;
 margin-left:5%;
+margin-bottom: 2px;
+height:40%;
 }
 #Vol_son{
  /* width: 30px;
@@ -204,6 +206,7 @@ margin-left:5%;
   }
 
 #Nom_Radio{
+  height:40%;
  padding-top: 15px;
   color: #0839a5;
   
@@ -295,6 +298,18 @@ input[type="range"]::-moz-range-thumb {
   padding-bottom:0px;
    
 }
+/* bouton cast*/
+   
+#Btn_Cast{ 
+  width:40px;
+  height:30px;
+  text-align: center;
+  font-size: 20px;
+  margin:15px;
+  border-radius: 8px;
+
+}
+
 @supports not (color: color-mix(in srgb,red,red)) {
   input {
     --_c: var(--c);
@@ -636,7 +651,7 @@ input[type="range"]::-moz-range-thumb {
    
   }
   .Chapitre {
-    height: 120px;
+    height: auto;
     
   }
 }
@@ -928,7 +943,7 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 100%;
+  width: 98%;
   align-items: center;
   /*padding:5px;*/
   /*margin:1%*/
@@ -937,6 +952,7 @@ main {
 
 .Couverture_ext {
   display: flex;
+  justify-content: space-between;
   border: 12px solid rgb(15, 148, 97);
   padding: 10px;
   text-align: center;
