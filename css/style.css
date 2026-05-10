@@ -585,7 +585,7 @@ input[type="range"]::-moz-range-thumb {
   /*    border:1px rgb(206, 137, 35) solid; */
   flex-direction: column;
   width: 90px;
-  height: 120px;
+  height: 3.5em;
   margin:auto;
   background-color: #d3adad;
   background: url("../images/Acceuil/ciel_noir.webp");
