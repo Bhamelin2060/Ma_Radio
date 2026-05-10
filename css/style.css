@@ -586,7 +586,7 @@ input[type="range"]::-moz-range-thumb {
   flex-direction: column;
   width: 90px;
   height: 3.5em;
-  margin:auto;
+   
   background-color: #d3adad;
   background: url("../images/Acceuil/ciel_noir.webp");
   border-radius: 10px;
@@ -595,6 +595,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 10px;
   color: deeppink;
   box-shadow: 3px 3px 10px rgb(38, 9, 168);
+  margin:auto;
 }
 .Chapitre:hover {
   background: linear-gradient(0deg, #9356DC, #FF79DA 35%, rgb(143, 46, 143) 100%);
