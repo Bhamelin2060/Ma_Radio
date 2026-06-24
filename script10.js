@@ -142,7 +142,7 @@ FIP_jazz_r.addEventListener('click', () => {
             let Station= Jazz_fip;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/FIP_JAZZ.jpg";
+             Image_Radio_Live.src="./images/FIP_JAZZ.JPG";
 
 });
 const FCulture_r=document.getElementById('France_culture');
@@ -207,7 +207,7 @@ JazzRadio_r.addEventListener('click', () => {
            initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/Jazz_radio.jpg";
+             Image_Radio_Live.src="./images/Jazz_radio.JPG";
 });
 const Sanef_r=document.getElementById('SANEF');
 Sanef_r.addEventListener('click', () => {
@@ -216,7 +216,7 @@ Sanef_r.addEventListener('click', () => {
            initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/SANEF.jpg";
+             Image_Radio_Live.src="./images/SANEF.JPG";
 });
 
 const BFM_rd=document.getElementById('BFM');
