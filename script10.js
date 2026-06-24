@@ -1,9 +1,6 @@
 //Code JS
 // Create constants here
 // =====================================
-// rec//Code JS
-// Create constants here
-// =====================================
 // recherche de la date du jour actuel
  
 //let Son = $('#audioPlayer');
@@ -142,7 +139,7 @@ FIP_jazz_r.addEventListener('click', () => {
             let Station= Jazz_fip;
             initAudio(Station);
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/FIP_JAZZ.JPG";
+             Image_Radio_Live.src="./images/FIP_JAZZ.jpg";
 
 });
 const FCulture_r=document.getElementById('France_culture');
@@ -207,7 +204,7 @@ JazzRadio_r.addEventListener('click', () => {
            initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/Jazz_radio.JPG";
+             Image_Radio_Live.src="./images/Jazz_radio.jpg";
 });
 const Sanef_r=document.getElementById('SANEF');
 Sanef_r.addEventListener('click', () => {
@@ -216,7 +213,7 @@ Sanef_r.addEventListener('click', () => {
            initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/Sanef.JPG";
+             Image_Radio_Live.src="./images/Sanef.jpg";
 });
 
 const BFM_rd=document.getElementById('BFM');
