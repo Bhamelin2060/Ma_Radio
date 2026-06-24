@@ -1,4 +1,4 @@
-//Code JS
+/Code JS
 // Create constants here
 // =====================================
 // recherche de la date du jour actuel
@@ -16,12 +16,17 @@ const Son=document.getElementById('audioPlayer');
   let France_Musique ="http://icecast.radiofrance.fr/francemusique-hifi.aac"
   let FIP ="http://direct.fipradio.fr/live/fip-hifi.aac";
   let France_culture="http://direct.franceculture.fr/live/franceculture-hifi.aac";
-  let Nostalgie="https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=fluxradios";
-  let Chérie_FM="https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=fluxradios";
+  let Nostalgie="http://streaming.nrjaudio.fm/oug7girb92oc?origine=fluxradios;origine=fluxradios";
+  let Chérie_FM="http://streaming.nrjaudio.fm/ouuku85n3nje?origine=fluxradios";
+ let BFM_r=" http://audio.bfmtv.com/bfmbusiness_128.mp3";
  let OTTO_Baroque="https://strmreg.1.fm/baroque_mobile_mp3";
- //<a href="/ch/1-fm-otto-s-baroque-music-radio_38391/" id="title" class="title" title="1.FM - Otto's Baroque Music Radio">1.FM - Otto's Baroque Music Radio</a>
  let ANCIEN_FM=src="https://mediaserv73.live-streams.nl:18058/stream";
  let CROONER=scr="http://croonerradio.ice.infomaniak.ch/croonerradio-hifi.aac";
+ let Radio_Jazz="http://jazzradio.ice.infomaniak.ch/jazzradio-high.aac";
+ let Sanef_107_7="http://sanef.ice.infomaniak.ch/sanef1077-idf.mp3";
+ let Jazz_fip="http://direct.fipradio.fr/live/fipjazz-hifi.aac";
+
+
 //---------------------------- declaration boutons volume----------------
  
 const Vol_son =document.getElementById("Vol_son");
@@ -34,23 +39,22 @@ const Btn_Pause=document.getElementById('Pause');
 const Lecture_bt=document.getElementById('lecture');
 const Icon_HP=document.getElementById('hautparleur');
 Vol_son.innerText=parseInt(Son.volume*10);
-
+const Image_Radio_Live=document.getElementById("ImgRadioEcoute")
 const RTL_r=document.getElementById('RTL');
 RTL_r.addEventListener('click', () => {
   
-            let Station=RTL;
-            initAudio(Station);;
-            document.getElementById("Nom_Radio").innerText="Vous écoutez RTL";
-            // On lit le track
+            let Station= RTL;
+            initAudio(Station);
+            document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/RTL.png";
 });
-
 const RMC_r=document.getElementById('RMC');
 RMC_r.addEventListener('click', () => {
   
             let Station=RMC;
             initAudio(Station);
-            document.getElementById("Nom_Radio").innerText="Vous écoutez RMC";
-            // On lit le track
+            document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/RMC.png";
              
 
 });
@@ -59,10 +63,10 @@ const FINFO_r=document.getElementById('France_Info');
  
 FINFO_r.addEventListener('click', () => {
   
-            let Station=France_Info;
+            let Station= France_Info;
             initAudio(Station);
-            document.getElementById("Nom_Radio").innerText="Vous écoutez France Info";
-            // On lit le track
+            document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/France_Info.png";
              
 
 });
@@ -70,10 +74,10 @@ const EUROPE1_r=document.getElementById('Europe_1');
  
 EUROPE1_r.addEventListener('click', () => {
   
-            let Station=Europe_1;
+            let Station= Europe_1;
 	    initAudio(Station);
-            document.getElementById("Nom_Radio").innerText="Vous écoutez Europe 1";
-            // On lit le track
+            document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/Europe_1.jpg";
              
 
 });
@@ -82,11 +86,11 @@ const MRADIO_r=document.getElementById('M_RADIO');
  
 MRADIO_r.addEventListener('click', () => {
   
-            let Station=M_Radio;
+            let Station= M_Radio;
             initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez M Radio";
-            // On lit le track
-            Son.play();
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/MRadio.jpg";
+             // Son.play();
 
 });
  
@@ -94,75 +98,84 @@ const FINTER_r=document.getElementById('France_Inter');
  
 FINTER_r.addEventListener('click', () => {
   
-            let Station=France_Inter;
+            let Station= France_Inter;
              initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez France Inter";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/franceinter.png";
 
 });
 const Rclassique_r=document.getElementById('Radio_Classique');
  
 Rclassique_r.addEventListener('click', () => {
   
-            let Station=Radio_Classique;
+            let Station= Radio_Classique;
             initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez Radio Classique1";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/Radio_Classique.png";
 });
 const FMusique_r=document.getElementById('France_Musique');
  
 FMusique_r.addEventListener('click', () => {
   
-            let Station=France_Musique;
+            let Station= France_Musique;
             initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez France Musique";
-            
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/France musique.jpg";
 
 });
 const FIP_r=document.getElementById('FIP');
  
 FIP_r.addEventListener('click', () => {
   
-            let Station=FIP;
+            let Station= FIP;
             initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez FIP";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/fip.png";
+
+});
+const FIP_jazz_r=document.getElementById('Fip_jazz');
+FIP_jazz_r.addEventListener('click', () => {
+  
+            let Station= Jazz_fip;
+            initAudio(Station);
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/FIP_JAZZ.jpg";
 
 });
 const FCulture_r=document.getElementById('France_culture');
  
 FCulture_r.addEventListener('click', () => {
   
-            let Station=France_culture;
+            let Station= France_culture;
           initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez France Culture";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/France culture.png";
 });
 const Nostalgie_r=document.getElementById('Nostalgie');
  
 Nostalgie_r.addEventListener('click', () => {
   
-            let Station =Nostalgie;
+            let Station = Nostalgie;
             initAudio(Station);
-            document.getElementById("Nom_Radio").innerText="Vous écoutez Nostalgie";
-             
+            document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/nostalgie.png";
 });
 const Cherie_r=document.getElementById('Chérie_FM');
 Cherie_r.addEventListener('click', () => {
   
-            let Station=Chérie_FM;
+            let Station= Chérie_FM;
            initAudio(Station);
-             document.getElementById("Nom_Radio").innerText="Vous écoutez Chérie FM";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/cheriefm.png"; 
 });
 const OTTOBAROQUE_r=document.getElementById('OTTO');
 OTTOBAROQUE_r.addEventListener('click', () => {
   
-            let Station=OTTO_Baroque;
+            let Station= OTTO_Baroque;
             initAudio(Station);
              
-             document.getElementById("Nom_Radio").innerText="Vous écoutez OTTO";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/OTTO_ Baroque.png";
 
 });
 const ANCIEN_FM_r=document.getElementById('ANCIEN_FM');
@@ -171,8 +184,8 @@ ANCIEN_FM_r.addEventListener('click', () => {
             let Station= ANCIEN_FM;
             initAudio(Station);
            
-             document.getElementById("Nom_Radio").innerText="Vous écoutez ANCIENT";
-            
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/ancientfm.png";
 
 });
 const CROONER_r=document.getElementById('CROONER');
@@ -181,8 +194,36 @@ CROONER_r.addEventListener('click', () => {
             let Station= CROONER;
            initAudio(Station);
            
-             document.getElementById("Nom_Radio").innerText="Vous écoutez CROONER";
-             
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/LOGO-CROONER-RADIO.jpg";
+});
+const JazzRadio_r=document.getElementById('Jazz_Radio');
+JazzRadio_r.addEventListener('click', () => {
+  
+            let Station= Radio_Jazz;
+           initAudio(Station);
+           
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/Jazz_radio.jpg";
+});
+const Sanef_r=document.getElementById('SANEF');
+Sanef_r.addEventListener('click', () => {
+  
+            let Station= Sanef_107_7;
+           initAudio(Station);
+           
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+             Image_Radio_Live.src="./images/SANEF.jpg";
+});
+
+const BFM_rd=document.getElementById('BFM');
+BFM_rd.addEventListener('click', () => {
+  
+            let Station= BFM_r;
+           initAudio(Station);
+           
+             document.getElementById("Nom_Radio").innerText="Vous écoute";
+             Image_Radio_Live.src="./images/BFM.png";
 });
 // Gestion du volume
  range.addEventListener('change', () => {
@@ -244,5 +285,7 @@ function resume(MonPlayer) {
     Son.pause();
 }
 // api cast 
+
+
 
 
