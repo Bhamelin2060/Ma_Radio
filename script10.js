@@ -1,4 +1,4 @@
-/Code JS
+//Code JS
 // Create constants here
 // =====================================
 // recherche de la date du jour actuel
