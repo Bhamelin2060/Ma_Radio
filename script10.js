@@ -216,7 +216,7 @@ Sanef_r.addEventListener('click', () => {
            initAudio(Station);
            
              document.getElementById("Nom_Radio").innerText="Vous écoutez";
-             Image_Radio_Live.src="./images/SANEF.JPG";
+             Image_Radio_Live.src="./images/Sanef.JPG";
 });
 
 const BFM_rd=document.getElementById('BFM');
