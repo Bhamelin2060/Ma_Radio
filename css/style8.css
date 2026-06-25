@@ -858,7 +858,7 @@ header {
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
 }
 
-@media( width>2200px) {
+@media (orientation: landscape)  {
 .list_R{   
         
         flex-direction: row;
