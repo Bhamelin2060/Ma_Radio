@@ -8,6 +8,7 @@
 --taille_min:min(12vw, 12vh);
 --taille_chapitre_v: var(--taille_min); 
 --taille_chapitre_h: var(--taille_min);
+
 }
 
 
@@ -637,7 +638,7 @@ background-image:c ;
 
 ._sommaire {
   display: flex;
-  flex-wrap: wrap;
+ /* flex-wrap: wrap;*/
   flex-direction: row;
   font-family: VagRounded;
   padding: 5px 10px 5px 10px;
@@ -858,7 +859,8 @@ header {
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
 }
 
-@media (orientation: landscape)  {
+ @media (orientation: landscape) 
+  {
 .list_R{   
         
         flex-direction: row;
@@ -885,6 +887,11 @@ header {
     height: var(--taille_min*0,8);
 }
 }
+
+
+
+
+
 
 
 
