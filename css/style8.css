@@ -886,6 +886,9 @@ header {
     width: var(--taille_min*0,8);
     height: var(--taille_min*0,8);
 }
+.ON_AIR{
+  flex-direction: row;
+}	  
 }
 
 
