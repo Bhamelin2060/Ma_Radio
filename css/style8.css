@@ -859,7 +859,7 @@ header {
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
 }
 
- @media (orientation: landscape) 
+@media (orientation: landscape) 
   {
 .list_R{   
         
@@ -886,9 +886,29 @@ header {
     width: var(--taille_min*0,8);
     height: var(--taille_min*0,8);
 }
+
 .ON_AIR{
   flex-direction: row;
-}	  
+  
+}
+.colonne_son {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  
+     width: 20vw; 
+
+}    
+.son_controle{
+  flex-direction: row;
+  margin-left: 10%;
+  align-items: center;
+}
+#source{
+  height:10%;
+  width:30vw;
+}
 }
 
 
