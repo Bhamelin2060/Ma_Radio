@@ -6,7 +6,7 @@
 //let Son = $('#audioPlayer');
 const Son=document.getElementById('audioPlayer');
 
-  let RTL = "http://streaming.radio.rtl.fr/rtl-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg";
+  let RTL = "http://icecast.rtl.fr/rtl-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg";
   let RMC =" http://audio.bfmtv.com/rmcradio_128.mp3";
   let France_Info="http://icecast.radiofrance.fr/franceinfo-hifi.aac";
   let Europe_1 ="http://europe1.lmn.fm/europe1.aac";
