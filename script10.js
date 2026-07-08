@@ -25,7 +25,7 @@ const Son=document.getElementById('audioPlayer');
  let Radio_Jazz="http://jazzradio.ice.infomaniak.ch/jazzradio-high.aac";
  let Sanef_107_7="http://sanef.ice.infomaniak.ch/sanef1077-idf.mp3";
  let Jazz_fip="http://direct.fipradio.fr/live/fipjazz-hifi.aac";
-
+  let radio_suisse_classic="http://stream.srg-ssr.ch/m/rsc_fr/aacp_96";
 
 //---------------------------- declaration boutons volume----------------
  
@@ -123,6 +123,19 @@ FMusique_r.addEventListener('click', () => {
             Image_Radio_Live.src="./images/France musique.jpg";
 
 });
+const R_Suisse_classic_r=document.getElementById('R_Suisse_classic');
+ 
+R_Suisse_classic_r.addEventListener('click', () => {
+  
+            let Station= radio_suisse_classic;
+            initAudio(Station);
+             document.getElementById("Nom_Radio").innerText="Vous écoutez";
+            Image_Radio_Live.src="./images/radio_suisse_classic.png";
+
+});
+
+
+
 const FIP_r=document.getElementById('FIP');
  
 FIP_r.addEventListener('click', () => {
