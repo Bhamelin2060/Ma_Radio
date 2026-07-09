@@ -4,14 +4,18 @@ let castSession = null;
 
 // Initialize Cast API
 function initCastApi() {
+  if (!window.chrome || !window.chrome.cast) {
+    console.warn('Cast API not available. Please serve over HTTP/HTTPS');
+    return;
+  }
+
   const options = {
-    receiverApplicationId: chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID, // Uses default receiver
+    receiverApplicationId: chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID,
     autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
   };
 
   chrome.cast.initialize(options, onCastApiAvailable, onCastApiError);
 }
-
 // Called when Cast API becomes available
 function onCastApiAvailable(isAvailable) {
   if (isAvailable) {
