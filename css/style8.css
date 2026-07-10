@@ -335,8 +335,9 @@ input[type="range"]::-moz-range-thumb {
    
 #Btn_Cast {
   transition: all 0.3s ease;
+	color:grey;
   background-color: transparent;
-  border: 2px solid #ddd;
+ /* border: 2px solid #ddd;*/
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -344,8 +345,11 @@ input[type="range"]::-moz-range-thumb {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-left:20px;
 }
-
+.fa-chromecast{
+  font-size: 40px;
+}
 #Btn_Cast:hover {
   background-color: #f0f0f0;
   border-color: #999;
