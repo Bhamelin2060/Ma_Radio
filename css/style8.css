@@ -338,7 +338,7 @@ input[type="range"]::-moz-range-thumb {
 	color:grey;
   background-color: transparent;
  /* border: 2px solid #ddd;*/
-  border-radius: 50%;
+  border:none;
   width: 40px;
   height: 40px;
   display: flex;
