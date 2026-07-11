@@ -50,7 +50,6 @@ function onSessionSuccess(session) {
   
   const currentSrc = audioPlayer.src;
  
-  document.getElementById("Btn_Cast").style.Color = "green";  // met le logo cast en Vert
 
   if (currentSrc) {
     castAudio(currentSrc);
