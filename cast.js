@@ -48,7 +48,7 @@ function onSessionSuccess(session) {
   const audioPlayer = document.getElementById('audioPlayer');
   
   const currentSrc = audioPlayer.src;
-  Bouton_cast.get
+ 
   document.getElementById("Btn_cast").bgColor = "green";  // mest le logo casten Vert
 
   if (currentSrc) {
