@@ -22,6 +22,7 @@ function onCastApiAvailable(isAvailable) {
   if (isAvailable) {
     console.log('Cast API is available');
     // Optional: Show cast button when API is ready
+      document.getElementById("Btn_Cast").style.Color = "green"; 
   }
 }
 
