@@ -335,9 +335,9 @@ input[type="range"]::-moz-range-thumb {
    
 #Btn_Cast {
   transition: all 0.3s ease;
-	color:grey;
+  color:white;
   background-color: transparent;
- /* border: 2px solid #ddd;*/
+  /*: 2px solid #ddd;*/
   border:none;
   width: 40px;
   height: 40px;
@@ -346,15 +346,16 @@ input[type="range"]::-moz-range-thumb {
   justify-content: center;
   cursor: pointer;
   margin-left:20px;
+  flex-wrap: nowrap;
 }
-.fa-chromecast{
-  font-size: 40px;
-}
+
 #Btn_Cast:hover {
   background-color: #f0f0f0;
   border-color: #999;
 }
-
+.fa-chromecast{
+  font-size: 40px;
+}
 #Btn_Cast.casting-active {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-color: #667eea;
@@ -500,7 +501,7 @@ width:50vw;
     font-size: 45px;
   }
    
-  
+ 
 } /* -------------fin media entre 500 et 768----------------*/
  @media all and (max-width: 589px) {
   h1 {
@@ -737,12 +738,7 @@ background-image:c ;
 
 
 
-#audioPlayer{
-   margin-left: 20px; 
-  height: 120%;
-  align-items: center;
-  width:30vw;  
-}
+
 
 #curseur {
   position: absolute;
@@ -878,7 +874,7 @@ header {
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
 }
 
-@media (orientation: landscape) 
+ @media (orientation: landscape) 
   {
 .list_R{   
         
@@ -928,7 +924,20 @@ header {
   height:10%;
   width:30vw;
 }
+#Btn_Cast{
+  width:10vw;
 }
+#audioPlayer{
+   margin-left: 20px; 
+  height: 120%;
+  align-items: center;
+  width:15vw;  
+}
+}
+
+
+
+
 
 
 
