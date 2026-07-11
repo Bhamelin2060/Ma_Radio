@@ -350,8 +350,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 #Btn_Cast:hover {
-  background-color: #f0f0f0;
-  border-color: #999;
+ 
+   color: #6719cc;
+  border-color: #6719cc;
 }
 .fa-chromecast{
   font-size: 40px;
