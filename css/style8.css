@@ -935,7 +935,8 @@ header {
   width:15vw;  
 }
 	  .Bouton1{
-      height:25px;
+      height:50px;
+      margin:auto;
 	  }
 }
 
